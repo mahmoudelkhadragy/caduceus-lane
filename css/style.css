@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* general styles */
+.wrap {
+  display: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #fff;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+}
+
+/* #1D2350 */
+
+/* signup_page style */
+.signup_page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 444;
+  overflow: hidden;
+}
+.signup_content {
+  position: absolute;
+  position: absolute;
+  width: 60%;
+  height: 60vh;
+  right: 80px;
+  top: 20vh;
+}
+.signup_content .signup_img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #1d2350;
+  overflow: hidden;
+  background-color: #d2d2d2;
+  background-image: url("../images/user.png");
+  background-size: 120%;
+  background-position: center;
+}
+.signup_content .signup_img:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 107px;
+  height: 107px;
+  border: 1px solid #d3d3d3;
+  border-radius: 50%;
+}
+.signup_form {
+  margin-top: 30px;
+}
+.signup_form p {
+  color: #696869;
+  font-size: 17px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: inline-block;
+  color: #fff;
+  background-color: #b3b3b3;
+  border: 2px solid #9b9b9b;
+  padding: 6px 8px 6px 50px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* sidebar style */
+.sidebar {
+  height: 100vh;
+  width: 12vw;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar ul li {
+  width: 100%;
+  height: 25vh;
+  background-color: #082058;
+  border-bottom: 1px solid #313c58;
+}
+.sidebar ul li a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar ul li a span.arrow {
+  display: none;
+  position: absolute;
+  left: 85%;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 40px solid #ececec;
+  border-bottom: 50px solid transparent;
+}
+
+/* section main style*/
+.main {
+  padding: 20px;
+  height: 100vh;
+  width: 88vw;
+  background-color: #ececec;
+}
+.content {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
